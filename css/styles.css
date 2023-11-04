@@ -1,0 +1,69 @@
+/* Whole Page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Name & Title */
+.name {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Manjari', sans-serif;
+/*font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;*/
+    font-weight: 400;
+    color: black;
+}
+
+.title {
+    color: black;
+    font-family: 'Manjari', sans-serif;
+}
+
+
+p {
+    font-family: 'Manjari', sans-serif;
+}
+
+
+/* Social Links */
+.socials {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.socials a {
+    margin: 0 10px;
+}
+
+.socials a i {
+    font-size: 50px;
+}
+
+a {
+    font-family: 'Manjari', sans-serif;
+}
+
+a:link {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+a:hover {
+    color: seagreen;
+}
+
+a:visited {
+    color: black;
+}
+
+ 

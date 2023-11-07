@@ -1,69 +1,33 @@
-/* Whole Page */
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-/* Name & Title */
 .name {
+    color: green;
     text-align: center;
-    font-size: 50px;
-    font-family: 'Manjari', sans-serif;
-/*font-family: 'Merriweather', serif;
-font-family: 'Montserrat', sans-serif;*/
-    font-weight: 400;
-    color: black;
 }
 
-.title {
-    color: black;
-    font-family: 'Manjari', sans-serif;
-}
-
-
-p {
-    font-family: 'Manjari', sans-serif;
-}
-
-
-/* Social Links */
-.socials {
-    margin-top: 20px;
+.container {
     display: flex;
-    justify-content: center;
-    text-decoration: none;
+    justify-content: space-between;
 }
 
-.socials a {
-    margin: 0 10px;
+.about-me {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 10px;
+    box-sizing: border-box;
 }
 
-.socials a i {
-    font-size: 50px;
+.specialities {
+    float: right;
+    width: 50%;
+    padding: 20px;
+    border: none;
+    margin: 10px;
+    box-sizing: border-box;
 }
 
-a {
-    font-family: 'Manjari', sans-serif;
+.speciality-list {
+    list-style-type: none;
+    margin-right: 10px;
+    justify-content: flex-end;
 }
-
-a:link {
-    color: black;
-}
-
-a:active {
-    color: black;
-}
-
-a:hover {
-    color: seagreen;
-}
-
-a:visited {
-    color: black;
-}
-
- 

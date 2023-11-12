@@ -1,5 +1,19 @@
+header .logo {
+    height: 100px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+body{
+    font-family:'Playfair', sans-serif !important;
+	background:#b8d8d8
+
+}
+
+
 .name {
-    color: green;
+    color: #4f6367;
     text-align: center;
 }
 
@@ -12,22 +26,18 @@
 .about-me, .specialities {
     width: 48%; /* Adjust the width to account for padding and border */
     padding: 20px;
-    margin: 10px;
-    box-sizing: border-box;
-    border: 1px solid #000; /* Apply the same border to both */
-    background-color: #f8f8f8; /* Optional: a light background color */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: a subtle shadow */
+    margin: 10px;/* Apply the same border to both */
+    background-color: #b8d8d8; /* Optional: a light background color */ /* Optional: a subtle shadow */
+    color: #4f6367;
 }
 
 .speciality-list {
     list-style-type: none;
     padding: 0; /* Remove padding to align with the parent's padding */
     margin: 0; /* Reset the margin for the ul */
+    text-align: center;
 }
 
 
-.about-me {
-    border: 1px solid #000;
-}
 
 

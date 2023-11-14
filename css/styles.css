@@ -7,16 +7,52 @@ header .logo {
 
 body{
     font-family:'Playfair', sans-serif !important;
-	background:#b8d8d8
+	background:#b8d8d8;
 
 }
-
 
 .name {
     color: #4f6367;
     text-align: center;
 }
 
+/*Nav Bar*/
+nav {
+    background-color: #b8d8d8;
+    overflow: hidden;
+}
+
+
+nav ul li {
+    list-style: none;
+    display: block;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #4f6367;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
 .container {
     display: flex;
@@ -27,14 +63,14 @@ body{
     width: 48%; /* Adjust the width to account for padding and border */
     padding: 20px;
     margin: 10px;/* Apply the same border to both */
-    background-color: #b8d8d8; /* Optional: a light background color */ /* Optional: a subtle shadow */
+    background-color: #b8d8d8; /* Optional: a light background color */ 
     color: #4f6367;
 }
 
 .speciality-list {
     list-style-type: none;
     padding: 0; /* Remove padding to align with the parent's padding */
-    margin: 0; /* Reset the margin for the ul */
+    margin: 0; 
     text-align: center;
 }
 

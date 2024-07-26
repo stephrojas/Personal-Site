@@ -1,19 +1,26 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 2;
+  color: #17202A;
+  background-color: #E9F7EF;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+header {
+  font-size: 4rem;
+  font-family: 'Vollkorn', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin: 0px auto;
+  display: block;
 }
 
-.logo {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
+p {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0px auto;
+  display: block;
 }
-

@@ -1,6 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   color: #f2f2f2;
@@ -12,9 +23,28 @@ body {
 }
 
 @supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
+  :root { font-family: "InterVariable", sans-serif; }
 }
 
+/*container settings */
+.container {
+  scroll-snap-type: mandatory;
+  overflow: scroll;
+  height: 100vh;
+  flex: 1 0 auto;
+}
+
+/*section settings*/
+.snap-section {
+   scroll-snap-align: start;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+   border: 1px solid #ccc;
+   margin: 0;
+}
 /*header*/
 header {
   font-size: 2rem;
@@ -31,14 +61,6 @@ h2 {
   font-size: 30px;
 }
 
-/*Avatar*/
-img {
-  width: 100px;
-  height: 100px;
-  border: 2px solid;
-  display: block;
-  margin: 1rem auto;
-}
 
 /**/
 p {
@@ -49,6 +71,14 @@ p {
   padding: 1rem;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.about-me {
+  flex-direction: column;
+}
+
+.blog-link {
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -70,3 +100,13 @@ p {
 
 }
 
+/*footer settings*/
+.site-footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: auto;
+  flex-shrink: 0;
+}

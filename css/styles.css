@@ -14,12 +14,37 @@ body {
   flex-direction: column;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  color: #f2f2f2;
+  color: black;
 }
 
-:root {
-  background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67));
-  font-family: 'Inter', sans-serif;
+button {
+  background: linear-gradient(135deg, #6e45e2, #88d3ce);
+  flex-direction: column;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, );
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0); 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(110, 69, 226, 0.4);
 }
 
 @supports (font-variation-settings: normal) {
@@ -43,7 +68,7 @@ body {
    align-items: center;
    font-size: 2rem;
    border: 1px solid #ccc;
-   margin: 0;
+   margin: 50px;
 }
 /*header*/
 header {
@@ -73,8 +98,14 @@ p {
   margin: 0 auto;
 }
 
+.about-me-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .about-me {
-  flex-direction: column;
+  max-width: 60%;
 }
 
 .blog-link {
@@ -100,13 +131,3 @@ p {
 
 }
 
-/*footer settings*/
-.site-footer {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  margin-top: auto;
-  flex-shrink: 0;
-}
